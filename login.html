@@ -1,0 +1,50 @@
+<head>
+    <meta charset="utf-8">
+    <title> Zooli Sign In</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./css/main.css">
+    <link hred="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"> 
+ </head>
+<html> 
+        <header> 
+                <div id="header" class="header">
+                    <div class="header-fixed">
+                        <h1 id="logo"><a href="index.html">zooli</a></h1>
+                        <div>
+                            <ul>
+                                <li>
+                                    <input class="navbtn button1" type="button" value="Login" onclick="window.location.href='/login.html'"/>
+                                </li>
+                                <li>
+                                    <input class="navbtn button2" type="button" value="Sign Up" onclick="window.location.href='/signup.html'"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+		<!--   Create Form for Sign in  -->
+<form id="msform">
+    <fieldset class="signInPart">
+        <div class="formBlock">
+            <h2>Welcome Back, Friend!</h2>
+            <p>Welcome back to Zooli. Are you ready to watch all your favourite shows? Sign in now!</p>
+        </div>
+        <input autocomplete="on" name="email" required="" type="text" placeholder="Email" />
+        <input autocomplete="on" name="cpass" required="" type="password" placeholder="Password" />
+        <input id="signIn" class="button2" name="submit" type="button" value="sign In" />
+        <p class="message">Not registered? <a href="./signup.html">Create an Account</a></p>
+    </fieldset>
+    <fieldset class="signInPart">
+      		<!--   Create Confirmation of sign in  -->
+        <div class="formBlock">
+            <h2>Welcome to back to Zooli</h2>
+            <p>We hope you Enjoy Your Stay</p>
+        </div>
+        <input id="SignOut" class="submit button1" name="submit" type="button" value="Sign Out" />
+        <input id="home" class="submit button2" name="submit" type="button" value=" Home" /> </fieldset>
+</form>
+		<!--   Javascript link  -->
+<script src="./js/formSignIn.js"></script>
+</html>

@@ -1,0 +1,760 @@
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.5rem;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Poppins';
+	background: #303030;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	color: #FFFFFF;
+	margin: auto;
+	padding: 0 auto;
+	max-width: 80%;
+}
+
+a,
+a:visited {
+	color: #FFFFFF;
+	list-style: none;
+}
+
+li {
+	list-style: none;
+	padding: 0.5rem;
+}
+
+strong {
+	font-size: 4.2rem;
+	font-weight: 600;
+}
+
+#home {
+	padding-top: 15rem;
+}
+
+.Landing-Page,
+.Movie-Page,
+.Explaination,
+.Subscribe {
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	color: #FFFFFF;
+}
+
+.body {
+	position: absolute;
+	top: 100rem;
+}
+
+h3 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .4rem;
+	margin: 2.5rem 0 2.5rem 0;
+	font-weight: 500;
+}
+
+.Landing-Page h1 {
+	margin: .5rem 0 .5rem 0;
+	font-size: 5rem;
+	line-height: 7rem;
+}
+
+.Landing-Page p,
+.product-Display p,
+.Explaination p {
+	margin: 3rem 0 3rem 0;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.Landing-Page .button2,
+.Subscribe .button2 {
+	margin: 0 0 3rem 0;
+	width: 20rem;
+	font-size: 1.5rem;
+}
+
+img {
+	justify-content: center;
+	margin: 3rem 0 5em 0;
+	width: 100%
+}
+
+h2 {
+	font-size: 2.5em;
+	line-height: 5rem;
+}
+
+.explainerBlock1 {
+	text-align: center;
+	margin: 3rem 0 5em 0;
+	display: flex;
+	flex-flow: column;
+}
+
+.explainerBlock2 {
+	text-align: center;
+	margin: 3rem 0 5em 0;
+	display: flex;
+	flex-flow: column;
+}
+
+@media screen and (min-width:920px) {
+	.block {
+		width: 50%;
+		height: 100%;
+	}
+	.Landing-Page {
+		position: relative;
+		top: -150px;
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0, 10%;
+		text-align: left;
+		margin: 5% 0 15% 0;
+	}
+	.block:nth-child(2) {
+		justify-content: left;
+		align-items: left;
+		display: left;
+	}
+	.block:first-child {
+		padding-left: 2.5rem;
+	}
+	.Landing-Page img {
+		flex-flow: row;
+		width: 125%;
+		transform: rotateY(180deg);
+		height: auto;
+		float: right;
+	}
+	h3 {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		letter-spacing: .4rem;
+		margin: 2.5rem 0 2.5rem 0;
+		font-weight: 500;
+	}
+	.Landing-Page h1 {
+		margin: .5rem 0 .5rem 0;
+		font-size: 4.5rem;
+		line-height: 6.5rem;
+	}
+	.Landing-Page p,
+	.product-Display p,
+	.Explaination p,
+	p {
+		margin: 3rem 0 3rem 0;
+		line-height: 3rem;
+		font-size: 1.25rem;
+		font-weight: 400;
+	}
+	.Landing-Page .button2,
+	.Subscribe .button2 {
+		margin: 0 0 3rem 0;
+		width: 20rem;
+		font-size: 1.5rem;
+	}
+	h2 {
+		font-size: 2em;
+		line-height: 5rem;
+	}
+	.explainerBlock1,
+	.explainerBlock2 {
+		align-items: center;
+		position: relative;
+		box-sizing: border-box;
+		display: flex;
+		flex: 0 1 auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.explainerBlock1:first-child,
+	.explainerBlock2:last-child,
+	.explainerBlock2:first-child,
+	.explainerBlock1:last-child {
+		justify-content: flex-start;
+		text-align: start;
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	.explainerBlock1:first-child {
+		text-align: center;
+		display: block;
+		float: left;
+		padding: 1rem;
+		max-width: 45%;
+	}
+	.explainerBlock2:first-child {
+		display: block;
+		float: right;
+		padding: 5rem;
+		margin: 2rem;
+	}
+	.explainerBlock2:last-child {
+		text-align: center;
+		display: block;
+		float: right;
+		padding: 1rem;
+		max-width: 45%;
+		margin-bottom: 0em;
+	}
+	.explainerBlock1:last-child {
+		display: block;
+		float: right;
+		padding: 5rem;
+		margin: 2rem;
+	}
+	footer {
+		position: relative;
+		top: 40rem;
+		left: 0;
+		bottom: 40rem;
+		width: 100%;
+		margin-top: 10rem;
+		color: #FFFFFF;
+		text-align: center;
+		justify-content: center;
+	}
+	.Subscribe {
+		position: relative;
+		top: -10rem;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		margin-bottom: 5rem;
+	}
+}
+
+@media screen and (min-width:1000px) {
+	.block {
+		width: 50%;
+		height: 100%;
+	}
+	.Landing-Page {
+		position: relative;
+		top: -150px;
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0, 10%;
+		text-align: left;
+		margin: 0 0 15rem 0;
+	}
+	.block:nth-child(2) {
+		justify-content: center;
+		align-items: right;
+		float: right;
+	}
+	.block:first-child {
+		padding-left: 2.5rem;
+	}
+	.Landing-Page img {
+		width: 150%;
+		transform: rotateY(180deg);
+		height: auto;
+		margin: 2.5rem;
+		margin-right: -5%;
+	}
+	h3 {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: .4em;
+		margin: 0 0 .5em 0;
+		font-weight: 500;
+	}
+	.Landing-Page h1 {
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+		font-size: 6.5rem;
+		line-height: 10rem;
+		color: #FFFFFF;
+		margin: 3rem 0 3rem 0;
+	}
+	.Landing-Page p,
+	p {
+		margin-bottom: 2.5rem;
+		font-size: 2rem;
+		line-height: 3.5rem;
+		font-weight: 400;
+		margin: 3rem 0 3rem 0;
+	}
+	.Landing-Page .button2,
+	.Subscribe .button2 {
+		font-size: 2rem;
+		text-align: center;
+		width: 30rem;
+		margin: 1.5rem 0 3rem 0;
+	}
+	.Movie-Page {
+		display: inline-block;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 10%;
+		margin-bottom: 10em;
+		text-align: center;
+	}
+	.Movie-Page h2,
+	h2 {
+		margin-top: .5em;
+		margin-bottom: .5em;
+		font-size: 2.5em;
+	}
+	#Explainer1 {
+		position: relative;
+		top: -50px;
+	}
+	.explainerBlock1:first-child,
+	.explainerBlock2:first-child {
+		margin-top: -4rem;
+	}
+}
+
+@media screen and (min-width:1150px) {
+	.Landing-Page {
+		position: relative;
+		top: -150px;
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		margin: 0;
+	}
+	.Landing-Page img {
+		width: 125%;
+		transform: rotateY(180deg);
+		height: auto;
+		margin-left: -5%;
+		float: right;
+	}
+	.Landing-Page h1 {
+		font-size: 7.5rem;
+		line-height: 10rem;
+		color: #FFFFFF;
+		margin: 0rem 0 3rem 0;
+	}
+	.explainerBlock1 {
+		margin-top: 5rem;
+	}
+	.explainerBlock2 {
+		margin-top: 5rem;
+	}
+	.explainerBlock1:first-child,
+	.explainerBlock2:last-child {
+		margin-top: 10rem;
+	}
+}
+
+
+}
+.columns {
+	float: left;
+	width: 33.3%;
+	margin-top: 5rem;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	box-sizing: border-box;
+	padding: 2rem 0 8rem;
+	min-height: 25rem;
+	position: relative;
+}
+.BoxInner {
+	cursor: default;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	text-align: center;
+	flex: 0 1 20em;
+	margin: 1em;
+	color: #FFFFFF;
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 2.5rem;
+	padding: 2.5rem 0.5rem;
+	transition-duration: 5;
+}
+.BoxInner:hover {
+	background: rgba(121, 139, 231, 0.08);
+	box-shadow: 0px 0px 21px 5px rgba(70, 67, 83, 1);
+}
+.Boxtitle {
+	font-size: 3rem;
+	font-weight: 400;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	position: relative;
+	font-weight: 600;
+}
+.Boxdesc {
+	padding: 0 2rem;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.80);
+}
+.Boxprice {
+	padding: 0 2rem;
+	padding-bottom: 2rem;
+	font-size: 2em;
+	font-weight: 600;
+}
+.points {
+	list-style-type: none;
+	padding: 0.75rem 2rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.80);
+}
+em,
+i {
+	font-weight: 600;
+}
+i {
+	padding: 0.5rem, 2rem;
+}
+@media only screen and (max-width: 600px) {
+	.columns {
+		width: 100%;
+	}
+}
+.explainerBlock {
+	flex-direction: column;
+	justify-content: space-between;
+	display: flex;
+	padding: 2px 0 8px;
+	position: relative;
+	flex-flow: row;
+	display: block;
+}
+.test {
+	display: block;
+}
+.explainerBlock img {
+	width: 100%;
+	margin: 3em auto 0;
+}
+header {
+	overflow: hidden;
+	padding: 1.5rem 7.25rem;
+	max-width: 1600px;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: 700;
+}
+.header {
+	position: static;
+	width: 100%;
+	height: 2rem;
+}
+.header-fixed #logo {
+	float: left;
+	font-size: 2rem;
+	transition: 0.3s ease-in-out;
+	letter-spacing: 0.05em;
+	padding: 0 7.5rem 7.5rem 0;
+	margin: 1.25rem 0 1rem 0;
+	font-weight: 600;
+}
+.header-fixed #logo:hover {
+	font-weight: 700;
+}
+.header-fixed ul {
+	list-style: none;
+	float: right;
+}
+.header-fixed div {
+	margin-left: 20px;
+	list-style: none;
+	line-height: 1;
+	float: right;
+}
+.header-fixed div li {
+	display: inline-block;
+	margin-left: 15px;
+}
+.header-fixed a {
+	text-decoration: none;
+	display: inline-block;
+}
+@media screen and (min-width:1200px) {
+	.header-fixed a {
+		font-size: 3rem;
+	}
+	
+	.header-fixed .button1,
+	.header-fixed .button2 {
+		font-size: 1.5rem;
+		width: 15rem;
+	}
+}
+@media screen and (max-width:650px) {
+	.header-fixed div {
+		position: absolute;
+		right: 6px;
+		margin-left: 4px;
+	}
+	
+	.header-fixed div li {
+		margin-left: 1px;
+	}
+	
+	.header-fixed #logo {
+		padding: 0;
+		position: absolute;
+		left: 6px;
+	}
+}
+#msform {
+	margin: 0;
+	text-align: center;
+	position: relative;
+	justify-content: center;
+}
+#msform fieldset {
+	padding: 2rem 2rem;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	position: relative;
+	justify-content: center;
+	border: none;
+}
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+#msform input,
+#msform textarea {
+	padding: 1.5em;
+	border: none;
+	border-radius: 5rem;
+	margin: 1rem 0;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+}
+.invaild {
+	box-shadow: 0px 0px 5px 3px red;
+}
+#progressbar {
+	margin-bottom: 1rem;
+	overflow: hidden;
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 9px;
+	line-height: 1.5;
+	width: 23%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	border-radius: 8rem;
+	display: block;
+	font-size: 8px;
+	color: #282D2D;
+	background: #FFFFFF;
+	margin: 0 auto 5px auto;
+}
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #FFFFFF;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1;
+}
+#progressbar li:first-child:after {
+	content: none;
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+	background: #7985E7;
+	color: #FFFFFF;
+}
+.form {
+	margin-bottom: 2rem;
+}
+.BaseImgCenter img {
+	width: 60rem;
+	padding: 0 auto;
+	margin-bottom: 5rem;
+}
+#msform .button2,
+#msform .button1,
+#msform .planChoose,
+.button2,
+.button1 {
+	padding: 0;
+	border: none;
+	outline: none;
+	font: inherit;
+	color: inherit;
+	background: none;
+	display: inline-block;
+	border: 2px solid #7985E7;
+	color: #FFFFFF;
+	background-color: #7985E7;
+	padding: 1rem 2.5rem;
+	border-radius: 5rem;
+	font-size: 1.75rem;
+	text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 15rem;
+	margin: 1rem 0.5rem;
+	margin-top: 2rem;
+}
+#msform .button1,
+.button1 {
+	background-color: transparent;
+	color: #7985E7;
+	width: 15rem;
+	align-content: center;
+}
+#msform .button1,
+.button1 {
+	border: 2px solid #7985E7;
+	background-color: transparent;
+	color: #7985E7;
+	width: 15rem;
+	align-content: center;
+}
+.button1:hover {
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	animation: pulse 1s infinite;
+	box-shadow: 0 0 40px 40px #7985E7 inset;
+	border: 2px solid #7985E7;
+	color: #FFFFFF;
+}
+#msform .button1 {
+	animation: comeFromBottom 1s ease-out .8s;
+}
+input[type="radio"] {
+	display: none;
+}
+input[type="radio"]:checked {
+	box-shadow: 0 0 40px 40px #FFFFFF inset;
+	border: 2px solid #FFFFFF;
+	color: #282D2D;
+}
+#msform .planChoose {
+	border: 2px solid #FFFFFF;
+	background-color: transparent;
+	color: #FFFFFF;
+	width: 15rem;
+	align-content: center;
+	padding: 0.35em 2em;
+	font-size: 1em;
+	margin: 0 auto 1em;
+}
+#msform .planChoose:hover {
+	transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+	box-shadow: 0 0 40px 40px #FFFFFF inset;
+	border: 2px solid #FFFFFF;
+	color: #282D2D;
+}
+.formBlock p {
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 3.5rem;
+}
+.formBlock h2 {
+	font-size: 4.5rem;
+}
+.button2:hover {
+	animation: pulse 1s infinite;
+	transition: .3s;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	
+	70% {
+		transform: scale(.9);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+.navbtn {
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	margin: 0.75rem auto;
+}
+#formComp .button2 {
+	width: 20rem;
+}
+@media only screen and (max-width: 1000px) {
+	.BaseImgCenter img {
+		width: 60rem;
+	}
+	
+	#msform .button2,
+	#msform .button1 {
+		width: 25rem;
+		font-size: 1.75rem;
+	}
+	
+	.button1 {
+		width: 15rem;
+	}
+	
+	.navbtn {
+		font-size: 1.75rem;
+		width: 15rem;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.BaseImgCenter img {
+		width: 40rem;
+	}
+	
+	#msform .button2,
+	#msform .button1 {
+		width: 15rem;
+		font-size: 1.25rem;
+		padding: 0.5rem 2rem;
+	}
+}
+.button1 {
+	width: 10rem;
+}
+.navbtn {
+	font-size: 1rem;
+	width: 10rem;
+}
+.signInPart {
+	display: none;
+}

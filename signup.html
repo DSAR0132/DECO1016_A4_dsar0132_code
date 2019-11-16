@@ -1,0 +1,137 @@
+<head>
+    <meta charset="utf-8">
+    <title> Zooli</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="./css/main.css">
+    <link hred="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"> 
+ </head>
+<html> 
+    		<!--   Create Navagation Bar -->
+  <header> 
+      <div id="header" class="header">
+          <div class="header-fixed">
+              <h1 id="logo"><a href="index.html">zooli</a></h1>
+              <div>
+                  <ul>
+                      <li>
+                          <input class="navbtn button1" type="button" value="Login" onclick="window.location.href='/login.html'"/>
+                      </li>
+                      <li>
+                          <input class="navbtn button2" type="button" value="Sign Up" onclick="window.location.href='/signup.html'"/>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </header>
+  		<!--   Startb of Form -->
+  <form id="msform" action="#">
+      <ul id="progressbar"> 		<!-- Progress Bar  -->
+          <li class="active">Choose Subscription</li>
+          <li>Create Account</li>
+          <li>Finish Account</li>
+          <li>Payment</li>
+      </ul>
+      <fieldset id="setFirst"> <!-- Form part 1 - Subscription Choice  -->
+          <div class="formBlock">
+              <h2>Choose your Subscription</h2>
+              <p>Lorem ipsum dolor sit amet, consectet adop adipisicio.</p>
+          </div>
+          <div class="container columns">
+              <div class="BoxInner columns">
+                  <h4 class="Boxtitle"><strong>&nbsp;$4 </strong><br /><br /> Starter Plan</h4>
+                  <p class="Boxdesc">Lorem ipsum Dolor adipisicing nostrud et aute.</p>
+                  <br />
+                  <ul>
+                      <li>Access to entire libary of shows</li>
+                      <li>Average Quality Screen</li>
+                      <li>Reccomendations and Sharing features</li>
+                  </ul>
+                  <br />
+                  <label id="Plan1" class="planChoose"> Choose
+                      <input id="radio1" class="radio" type="radio" value="Starter Plan" />
+                  </label>
+              </div>
+              <div class="BoxInner">
+                  <h4 class="Boxtitle"><strong> $8 </strong><br /><br /> Group Plan</h4>
+                  <p class="Boxdesc">Lorem ipsum Dolor adipisicing nostrud et aute.</p>
+                  <br />
+                  <ul>
+                      <li>Access to entire libary of shows</li>
+                      <li>Average Quality Screen</li>
+                      <li>Reccomendations and Sharing features</li>
+                  </ul>
+                  <br />
+                  <label id="Plan2" class="planChoose"> Choose
+                      <input id="radio2" class="radio" type="radio" value="Group Plan" />
+                  </label>
+              </div>
+              <div class="BoxInner">
+                  <h4 class="Boxtitle"><strong> $20 </strong><br /><br /> Lux Plan</h4>
+                  <p class="Boxdesc">Lorem ipsum Dolor adipisicing nostrud et aute.</p>
+                  <br />
+                  <ul>
+                      <li>Access to entire libary of shows</li>
+                      <li>Average Quality Screen</li>
+                      <li>Reccomendations and Sharing features</li>
+                  </ul>
+                  <br />
+                  <label id="Plan3" class="planChoose"> Choose
+                      <input id="radio3" class="radio" type="radio" value="Lux Plan" />
+                  </label>
+              </div>
+          </div>
+          <input id="Next1" class="next button2" name="next" type="submit" value="Next" />
+      </fieldset>
+      <fieldset id="setSecond"> <!-- Form part 2 - Create Account 1  -->
+          <div class="formBlock">
+              <h2>Create your account</h2>
+              <p>Please enter your details below so we can properly tailor your account to you</p>
+          </div>
+          <input id="Fname" name="Fname" required="" type="text" placeholder="First Name" />
+          <input id="Lname" name="Lname" required="" type="text" placeholder="Last Name" />
+          <input name="email" required="" type="text" placeholder="Email" />
+          <input class="previous button1" name="previous" type="button" value="Previous" />
+          <input id="Next2" class="next button2" name="next" type="submit" value="Next" />
+      </fieldset>
+      <fieldset id="setThird">
+          <div class="formBlock">
+              <h2>Almost done</h2> <!-- Form part 2 - Create Account 2  -->
+              <p>Only a little bit more information to go, hold tight you will be able to stream soon!</p>
+          </div>
+          <br />
+          <p><em> You must be 18 years or older to view particular content on Zooli</em></p>
+          <input min="18" name="DOB" required="" type="number" placeholder="Age" />
+          <p><em> Enter a password with one upper case, lower case and number to ensure security </em></p>
+          <input title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required="" type="password" placeholder="Password" />
+          <input title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." name="cpass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required="" type="password" placeholder="Confirm Password" />
+          <input class="previous button1" name="previous" type="button" value="Previous" />
+          <input id="Next3" class="next button2" name="next" type="submit" value="Next" />
+      </fieldset>
+      <fieldset id="setFourth"> <!-- Form part 3 - Payment w/ autofill -->
+          <div class="formBlock">
+              <h2>Payment</h2>
+              <p id="PaymentText">Confirming the payment for the subsciption of your choice</p>
+          </div>
+          <input name="cardName" required="" type="text" placeholder="Card Holders Name" />
+          <input autocomplete="cc-number" name="phone" pattern="[0-9]*" required="" type="tel" autofocus="" placeholder="Card Number" />
+          <input class="form-control" autocomplete="cc-exp" name="cardExpiry" required="" type="tel" placeholder="MM / YY" />
+          <input class="form-control" autocomplete="cc-csc" name="cardCVC" required="" type="tel" placeholder="CVC" />
+          <input class="previous button1" name="previous" type="button" value="Previous" />
+          <input id="submit" class="submit button2" name="submit" type="submit" value="Submit" />
+      </fieldset>
+      <section id="formComp"> <!-- Congrats screen for sign up (personalited)-->
+          <div class="BaseImgCenter"><img src="..//images/undraw_cele.svg" alt="image" /></div>
+          <div class="formBlock">
+              <h2 id="TitleChange">Welcome to Zooli, Placeholder</h2>
+              <p id="WelcomeText">Lorem ipsum dolor sit amet, consectet adop adipisicio. Lorem ipsum dolor sit amet, consectet adop adipisicio. Lorem ipsum dolor sit amet, consectet adop adipisicio.</p>
+              <input class="home button2" name="button" type="button" value="Back to Home" />
+          </div>
+      </section>
+  </form>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src="./js/script.backup.js"></script>
+<script src="./js/internalform.js"></script>
+</html>
